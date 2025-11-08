@@ -1,6 +1,6 @@
 export async function getJobHistory(){
     try{
-        const res = await fetch('http://localhost:5000/job-history');
+        const res = await fetch('http://13.48.129.202:5000/job-history');
         if (!res.ok) {
             throw new Error('Failed to fetch job history');
         }
