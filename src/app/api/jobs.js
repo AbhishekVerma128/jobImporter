@@ -1,6 +1,6 @@
 export async function getJobHistory(){
     try{
-        const res = await fetch('http://localhost:5000/job-history');
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`+'/api/job-history');
         if (!res.ok) {
             throw new Error('Failed to fetch job history');
         }
